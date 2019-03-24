@@ -1,0 +1,621 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+    <link rel="icon" href="favicon.JPG" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>blog</title>	
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Roboto+Mono" rel="stylesheet">	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	</head>
+	<body>		
+	<div class="gtco-loader"></div>	
+        <div id="page">
+            <nav class="gtco-nav" role="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2 text-left">
+                            <div id="gtco-logo"><a href="Default.aspx">意如梦</a></div>
+                        </div>
+                        <div class="col-xs-10 text-right menu-1">
+                            <ul>
+                                <li class="has-dropdown">
+                                    <a style="font-size:17px">编程</a>
+                                    <ul class="dropdown">
+                                        <li><a href="cppDirectory.html">C++</a></li>
+                                        <li><a href="java.aspx">Java</a></li>
+                                        <li><a href="qianduan.aspx">前端</a></li>
+                                        <li><a href="https://github.com/Sk-Raven?tab=stars" target="_blank">GitHub</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="travel.aspx" style="font-size:17px">吃和旅游</a></li>
+                                <li class="has-dropdown">
+                                    <a style="font-size:17px">音乐</a>
+                                    <ul class="dropdown">
+                                        <li><a href="CD.aspx">CD</a></li>
+                                        <li><a href="MV.aspx">MV与Live</a></li>
+                                        <li><a href="cepin.aspx">器械测评</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a  style="font-size:17px">视频</a>
+                                    <ul class="dropdown">
+                                        <li><a href="https://space.bilibili.com/32482729/#!/favlist?fid=31625534" target="_blank">B站视频</a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCI5p6vq02jZ86BqZQqIOl1w?view_as=subscriber" target="_blank">Youtube视频</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a style="font-size:17px">游戏与程序</a>
+                                    <ul class="dropdown">
+                                        <li><a href="regame.aspx">游戏赏析</a></li>
+                                        <li><a href="resoftware.aspx">软件推荐</a></li>
+                                        <li><a href="http://steamcommunity.com/profiles/76561198341488225" target="_blank">Steam</a></li>
+                                    </ul>
+                                </li>
+                                <li><a  href="life.aspx" style="font-size:17px">生活流水帐</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/AA/b.JPG);" data-stellar-background-ratio="0.5">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 text-left">
+                            <div class="display-t">
+                                <div class="display-tc animate-box" data-animate-effect="fadeInUp">
+                                    <span class="date-post">2017.11.10</span>
+                                    <h1 class="mb30"><a href="#">抗锯齿技术解析</a></h1>
+                                    <p>by <a href="#" class="text-link">我到处瞎抄的</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="gtco-maine">
+                <div class="container">
+                    <div class="row row-pb-md">
+                        <div class="col-md-12">
+                            <article class="mt-negative">
+                                <div class="text-left content-article">
+                                    <div class="row">
+                                        <div class="col-lg-13 cp-r animate-box " >
+                                            <div class="WordSection1">
+                                                <p class="MsoNormal" align="center" style="margin-left:17.85pt;text-align:center;">
+                                                    <b>抗锯齿技术解析</b>
+                                                </p>
+                                                <div align="center">
+                                                    <br />
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <p class="MsoTocHeading">
+                                                目录
+                                            </p>
+                                            <p class="MsoToc2" style="margin-left:24pt;">
+                                                &nbsp;<a>一、引言</a>
+                                            </p>
+                                            <p class="MsoToc2" style="margin-left:24pt;">
+                                                <a>二、失真的类别</a>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>几何失真</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>透明失真</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>纹理失真</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>渲染失真</a></span>
+                                            </p>
+                                            <p class="MsoToc2" style="margin-left:24pt;">
+                                                <a>三、常见抗锯齿类型总结</a>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>超级采样抗锯齿（SSAA）</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>多重采样抗锯齿（MSAA）</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>覆盖采样抗锯齿（CSAA）</a></span>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>高分辨率抗锯齿（HRAA）</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>多帧采样抗锯齿&nbsp;(MFAA)&nbsp;</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>后处理抗锯齿</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>快速近似抗锯齿（FXAA）</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>增强型子像素形态学反锯齿（SMAA）</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>时间性抗锯齿（TXAA</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>后期处理抗锯齿的优点和缺点</a></span>
+                                            </p>
+                                            <p class="MsoToc2" style="margin-left:24pt;">
+                                                <a>四、主流抗锯齿效果的横向对比</a>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>FXAA</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>SMAA 4X</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>TXAA 4X</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>MSAA 8X</a></span>
+                                            </p>
+                                            <p class="MsoToc3" style="margin-left:48pt;">
+                                                <span class="MsoHyperlink"><a>总结</a></span>
+                                            </p>
+                                            <p class="MsoToc2" style="margin-left:24pt;">
+                                                <a>五、抗锯齿技术的未来</a>
+                                            </p>
+                                            <p class="MsoToc2" style="margin-left:24pt;">
+                                                <a>六、新的抗锯齿的可能</a>
+                                            </p>
+                                            <p class="MsoNormal">
+                                                <b></b>&nbsp;
+                                            </p>
+                                            <h2>
+                                                <a name="undefined"></a>一、引言
+                                            </h2>
+                                            <p class="MsoNormal" style="text-indent:24.1pt;">
+                                                <em><b>抗锯齿</b></em>（英语：anti-aliasing，简称AA），也译为边缘柔化、消除混叠、抗图像折叠有损，反走样等。它是一种消除显示器输出的画面中图物边缘出现凹凸锯齿的技术，那些凹凸的锯齿通常因为高分辨率的信号以低分辨率表示或无法准确运算出3D图形坐标定位时所导致的图形混叠（aliasing）而产生的，反锯齿技术能有效地解决这些问题。它通常被用在在数字信号处理、数字摄影、电脑绘图与数码音效及电子游戏等方面，柔化被混叠的数字信号。
+                                            </p>
+                                            <p class="MsoNormal" style="text-indent:24pt;">
+                                                需注意的是<b>Aliasing</b>在3D渲染中不是指锯齿，而是指更广的渲染失真的概念。锯齿只是渲染失真的一个主要表现，但是画质选项中，如MSAA（Multisampling Anti-Aliasing）
+                                            </p>
+                                            <p class="MsoNormal">
+                                                往往被翻译为“多重采样抗锯齿”&nbsp;这实际上是一种不太准确的翻译。
+                                            </p>
+                                            <p class="MsoNormal" style="text-indent:24pt;">
+                                                随着科技的进步，时代的飞速发展，电子游戏的画质不断飞速提升。除了极个别复古流的游戏，绝大多数游戏往往被消费者要求提供好看流畅的画面。抗锯齿是画面中很重要的一个方面，不开抗锯齿的游戏画面内物体边缘往往惨不忍睹，充满了锯齿。没有对抗锯齿做足够优化的游戏，虽然画面精美，但只是个“拍照游戏”，极低的帧数带来差劲的游戏体验。研究如何提供一个高帧数且画质精美的游戏体验有很重要的意义。本文对抗锯齿技术做一点简单的解析，并且探讨一种新的抗锯齿思路。
+                                            </p>
+                                            <p class="MsoNormal" style="text-indent:24pt;">
+                                                &nbsp;
+                                            </p>
+                                            <h2>
+                                                <a name="undefined"></a>二、失真的类别
+                                            </h2>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;失真最早出现于信号这门学科中，指信号在传输过程中与原有信号或标准相比所发生的偏差。 在理想的放大器中，输出波形除放大外，应与输入波形完全相同，但实际上，不能做到输出与输入的波形完全一样，这种现象叫失真。而在3D渲染中，这个词有着新的意义，它是指所有3D场景在渲染光栅化后产生的画面瑕疵。
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;光栅化是将几何数据经过一系列变换后最终转换为像素，从而呈现在显示设备上的过程。光栅化的本质之一就是几何离散化。3D场景渲染在光栅化之前是连续信号，但在进行像素渲染（对每个像素生成相应的色彩值）的时候就不得不对连续信号进行采样以获得能够输出到显示器的结果。下面这张图展示了一个最基本的锯齿现象。
+                                            </p>
+                                            <p>
+                                                <img width="355" height="156" src="images/AA/clip_image002.png" />
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;在光栅化过程中，每个像素的中心被采样一次：如果这个中心位于三角形内，那么这个像素是白色的，否则是绿色的。这种采样策略不可避免的产生了阶梯状锯齿——一种最为常见的渲染瑕疵。
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;所有的渲染失真都可以归因于采样问题（用有限离散的像素展示无限连续的细节），且每种失真具体的成因将和哪种反锯齿最有效息息相关。我们先将3D渲染的产生的失真根据其成因简单归纳为4个类别。
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>几何失真
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;这是最常见的失真类型。当一些场景的几何体的边缘（一般为三角形）和一个像素部分覆盖的时候，由于对非完全覆盖的采样过于粗糙（1像素1采样点），栅格化后就出现了锯齿。
+                                            </p>
+                                            <p class="MsoNormal">
+                                                还有一种情况是某物体栅格化后小于一像素，这就产生了子像素失真。子像素失真最常见于非常细小的物体，例如场景中的塔尖、细线，剑尖等。
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>透明失真
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;当一张贴图包含部分透明（镂空）图案的时候（如铁丝网，树木，草），由于贴图本身就是由个数有限的像素阵列所组成，当判断被渲染几何体透明与否的时候会将贴图的栅格化特性带入最后的渲染结果。这样一来，就算是几何体内部也可能会有锯齿。
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>纹理失真
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;当包含大量高频信号的纹理未被充分采样的时候（特别是在各向异性采样的场景中，最典型的就是延伸到屏幕深处的一个平面，例如地平线），则会出现纹理失真。
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>渲染失真
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;像素渲染器在对每个像素进行颜色填充时产生的失真称为渲染失真。这种现象通常在硬光照渲染中出现，例如基于法线贴图的镜面高光，卡通渲染，以及边缘光照等等。
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;
+                                            </p>
+                                            <h2>
+                                                <a name="undefined"></a>三、常见抗锯齿类型总结
+                                            </h2>
+                                            <p class="MsoNormal" style="text-indent:24pt;">
+                                                在了解了所有失真的类别后，终于可以开始分析现今的抗锯齿技术了。这些抗锯齿技术可以分为两类：一类是通过提高渲染时的采样数来减少锯齿，另一类则是通过对已渲染好的图片进行分析和后期处理来减少锯齿。基于采样实现的反锯齿技术更为直观，因此这里从采样反锯齿开始介绍。
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>超级采样抗锯齿（SSAA）
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;超级采样抗锯齿（Super-Sampling Anti-Aliasing，简称SSAA）是比较早期的抗锯齿方法，比较消耗资源，但简单直接。这种抗锯齿方法先把图像映射到缓存并把它放大，再用超级采样把放大后的图像像素进行采样，一般选取2个或4个邻近像素，把这些采样混合起来后，生成的最终像素，令每个像素拥有邻近像素的特征，像素与像素之间的过渡色彩，就变得近似，令图形的边缘色彩过渡趋于平滑。再把最终像素还原回原来大小的图像，并保存到帧缓存(显存)中，替代原图像存储起来，最后输出到显示器，显示出一帧画面。这样就等于把一幅模糊的大图，通过细腻化后再缩小成清晰的小图。如果每帧都进行抗锯齿处理，游戏或视频中的所有画面都带有抗锯齿效果。另外，作为概念上最简单的一种超采样方法，全场景抗锯齿（Full-Scene Antialiasing,FSAA）以较高的分辨率对场景进行绘制，然后对相邻的采样样本进行平均，从而生成一幅新的图像。
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;优点是所有抗锯齿处理中，它是画质最好的一个。缺点是这种处理方法对配置要求极高，即使GPU足够强大能完成运算，也有可能会发生爆显存的情况。现在游戏厂商为了满足玩家截屏的需要，往往会把超级采样抗锯齿从抗锯齿的选项中取出，另做为超级采样供玩家选择。
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>多重采样抗锯齿（MSAA）
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;多重采样抗锯齿（Multi Sampling Anti-Aliasing，简称MSAA），是一种特殊的超级采样抗锯齿（SSAA）。MSAA首先来自于OpenGL。具体是MSAA只对Z缓存（Z-Buffer）和模板缓存(Stencil Buffer)中的数据进行超级采样抗锯齿的处理。可以简单理解为只对多边形的边缘进行抗锯齿处理。这样一种策略使得几何体边缘抗锯齿的效果接近SSAA并大幅降低性能开销。但由于MSAA仅针对几何体边缘进行抗锯齿，其他类别的失真（透明失真、纹理失真和渲染失真等）都无法被消除。当硬件支持Z信息和颜色缓冲压缩时，MSAA带来的内存带宽开销会进一步缩小，而现今大部分GPU都已经支持这些特性。
+                                            </p>
+                                            <p class="MsoNormal">
+                                                <img width="776" height="442" src="images/AA/clip_image003.png" />
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>覆盖采样抗锯齿（CSAA）
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;覆盖采样抗锯齿（Coverage Sampling Anti-Aliasing，简称CSAA）是NVIDIA在G80及其衍生产品首次推向实用化的AA技术，CSAA就是在MSAA基础上更进一步的节省显存使用量及带宽，简单说CSAA就是将边缘多边形里需要取样的子像素坐标覆盖掉，把原像素坐标强制安置在硬件和驱动程序预先算好的坐标中。这就好比取样标准统一的MSAA，能够最高效率的执行边缘取样，效能提升非常的显著。比方说16xCSAA取样性能下降幅度仅比4xMSAA略高一点，处理效果却几乎和8xMSAA一样。8xCSAA有着4xMSAA的处理效果，性能消耗却和2xMSAA相同。但随着新的抗锯齿技术的出现，这种技术已经被淘汰了。
+                                            </p>
+
+                                            <h3>
+                                                <a name="undefined"></a>高分辨率抗锯齿（HRAA）
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;高分辨率抗锯齿方法(High Resolution Anti-Aliasing，简称HRAA)，也称Quincunx方法，也出自NVIDIA公司。“Quincunx”意思是5个物体的排列方式，其中4个在正方形角上，第五个在正方形中心，也就是梅花形，很像六边模型上的五点图案模式。此方法中，采样模式是五点梅花状，其中四个样本在像素单元的角上，最后一个在中心。
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>多帧采样抗锯齿&nbsp;(MFAA)
+                                            </h3>
+                                            <p class="MsoQuote" align="left">
+                                                &nbsp;&nbsp;随着NVIDIA的新的架构Maxwell的发布，新的抗锯齿技术多帧采样抗锯齿（Multi-Frame Sampled Anti-Aliasing，MFAA）走进人们的视线。它是NVIDIA公司根据MSAA改进出的一种抗锯齿技术，可以将MFAA理解为MSAA的优化版，能够在得到几乎相同效果的同时提升性能上的表现。MFAA与MSAA最大的差别就在于在同样开启4倍效果的时候MSAA是真正的针对每个边缘像素周围的4个像素进行采样，MFAA则是仅仅只是采用交错的方式采样边缘某个像素周围的两个像素。下面一段摘自英伟达官网<sup>[1]</sup>：
+                                            </p>
+                                            <p class="MsoQuote" align="left">
+                                                “上一代&nbsp;GPU&nbsp;包含抗锯齿&nbsp;(AA)&nbsp;固定采样格式，存储在只读存储器&nbsp;(ROM)&nbsp;当中。例如，当游戏玩家选择&nbsp;2x&nbsp;或&nbsp;4x MSAA&nbsp;时，就会使用预先存储的采样格式。 在&nbsp;Maxwell&nbsp;上，我们推出了用于光栅化的可编程采样位置，它们被存储在随机存取存储器&nbsp;(RAM)&nbsp;中。如此一来便为更灵活、更创新的全新抗锯齿技术创造了机会，这类抗锯齿技术能够独特地解决现代游戏引擎所带来的难题，例如高画质抗锯齿对性能的更高要求。”<img width="640" height="358" src="images\AA\clip_image004.png" />
+                                            </p>
+                                            <p class="MsoQuote">
+                                                <b>“通过在时间和空间两方面交替使用抗锯齿采样格式，4xMFAA&nbsp;</b><b>的性能代价仅相当于&nbsp;2xMSAA</b><b>，但是抗锯齿效果却与&nbsp;4xMSAA&nbsp;</b><b>相当。”<img width="543" height="307" src="images/AA/clip_image007.png" /></b>
+                                            </p>
+                                            <p class="MsoNormal">
+                                                MFAA的缺点是显而易见的，它要求较高的帧数。优点是在帧数足够高的情况下，&nbsp;MFAA 4x<sup>[2]</sup>花费MSXX 2x的性能代价就可以达到MSAA 4x的效果。
+                                            </p>
+                                            <p class="MsoNormal">
+                                                以上是一些常见的采样抗锯齿类型，下面介绍后处理抗锯齿。
+                                            </p>
+                                            <h3>
+                                                &nbsp;&nbsp;<a name="undefined"></a>后处理抗锯齿
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;虽然后处理抗锯齿在2009年Reshetov的MLAA (Morphological Anti-Aliasing)论文发表后才热门起来<sub>[3]</sub>，后处理抗锯齿本身并不是一个全新的概念。1983年Jules Bloomenthal在SIGGRAPH发表的文章“Edge Inference with Applications to Anti-Aliasing”<sub>[4]</sub>中已经提及相关的方法，而且放到今日这个方法仍旧非常可行：
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;
+                                            </p>
+                                            <p class="MsoQuote">
+                                                “那些和栅格像素排列不平行的几何边缘被采样后，会出现阶梯状锯齿。这种渲染瑕疵在2D和3D的CG中均很常出现。准确的边缘信息往往会丢失，但通过对锯齿边缘进行分析，可以估算出精度远高于原始分辨率的边缘信息。
+                                            </p>
+                                            <p class="MsoQuote">
+                                                估测出来的边缘信息可以用来对原始像素进行重新着色，从而达到平滑这些边缘的目的。相较于阶梯状的边缘，这种平滑后的边缘显然离原始边缘更为接近。”
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;总体而言，所有的纯后处理抗锯齿都包含了以下三个步骤，而不同的后处理抗锯齿主要区别就在这三个步骤的具体实现方法上：
+                                            </p>
+                                            <p class="MsoNormal">
+                                                1.检测图像中不连续的部分（检测边缘信息）
+                                            </p>
+                                            <p class="MsoNormal">
+                                                2.通过这些不连续部分的信息重建原始边缘信息
+                                            </p>
+                                            <p class="MsoNormal">
+                                                3.对估测边缘上的像素进行重着色
+                                            </p>
+                                            <p class="MsoNormal">
+                                                1999年，Isshiki和Kunieda提出了第一种基于这种思想的实时算法<sub>[5]</sub>。这种方法通过扫描图像中线和列实现，并能在硬件上运行。
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>快速近似抗锯齿（FXAA）
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;快速近似抗锯齿(FXAA)&nbsp;快速近似抗锯齿(Fast Approximate Anti-Aliasing)&nbsp;它是传统MSAA(多重采样抗锯齿)效果的一种高性能近似值。它只是单纯的后期处理着色器，不依赖于任何的GPU计算API。正因为如此，FXAA技术对显卡没有特殊要求。
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp; FXAA的优点是占用率极低，但是处理后画面不够精美，往往带有一种雾蒙蒙的效果。是所有AA中最模糊的一个。
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>增强型子像素形态学反锯齿（SMAA）
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                &nbsp; &nbsp;SMAA全称为增强型子像素形态学反锯齿（EnhancedSubpixel Morphological Antialiasing）。它的基本处理流程建立在Jimenez优化改造后的MLAA算法之上，但是每一个步骤都经过了强 化或者是彻底的更新：边缘检测技术通过精确距离搜索和局部对比度自适应得到了提升，使得处理结果更加可靠。同时，模式识别方面被尖锐几何特征、对角线检测 加以强化，能够在物体轮廓的斜线上产生更加准确的结果。MLAAMLAA是Intel提出的纯CPU AA Morphological Antialiasing (MLAA)，具体算法是将跨越边缘像素的前景和背景色进行混合，用第2种颜色来填充该像素，从而更有效地改进图像边缘的变现效果。<sub>[6]</sub>
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>时间性抗锯齿（TXAA）
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;时间性抗锯齿（Temporal Anti-Aliasing，简称TXAA），将&nbsp;MSAA、时间滤波以及后期处理相结合，用于呈现更高的视觉保真度。与CG电影中所采用的技术类似，TXAA集MSAA的强大功能与复杂的解析滤镜于一身，可呈现出更加平滑的图像效果。此外，TXAA还能够对帧之间的整个场景进行抖动采样，以减少闪烁情形，闪烁情形在技术上又称作时间性锯齿。目前，TXAA有两种模式：TXAA 2X和TXAA 4X。TXAA 2X可提供堪比MSAA 8X的视觉保真度，然而所需性能却与MSAA 2X相类似；TXAA 4X的图像保真度胜过MSAA 8X，所需性能仅仅与MSAA 4X相当。<sup>[7]</sup>
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp; TXAA的性能相对于MSAA较好，模糊度在于MSAA和FXAA之间。略微的模糊带来了一种CG般的感觉。
+                                            </p>
+                                            <h3>
+                                                &nbsp;<a name="undefined"></a>后期处理抗锯齿的优点和缺点
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;后期处理抗锯齿的许多优势是基于采样的抗锯齿技术无法比拟的。对于几何失真，后期处理抗锯齿的效果能够与使用了大量采样点的基于采样抗锯齿相媲美，而前者的性能开销只是后者的几分之一。同时，后期处理抗锯齿在应用上的局限性更小。在某些情况下，比如说采用了延迟渲染后，基于采样的抗锯齿就无能为力了；而后期处理抗锯齿依然能够使用。
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;当然，后期处理抗锯齿有其明显的局限性：它无法解决子像素失真的问题。后期处理抗锯齿完全依赖于对已经渲染的画面的后期分析，计算机算法不同于人类，它们没办法从分离的像素块中推测出这些像素原本想表达什么图形。比如说三角形，组成它的像素到底原本就是分离的？还是由于子像素失真导致了它们的不连续？当这样的问题出现时，两种可能的处理方式都并不理想——第一种是算法将这些像素变得模糊，以牺牲细节的代价来让锯齿变得不那么明显；第二种是让算法把这些不确定的像素扔到一边，只处理那些能够确定的边缘。
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;同时，后期处理抗锯齿还有可能出现误判的问题。如果画面中的某块区域被抗锯齿算法认定为需要处理的边缘(而实际上它们不是)，这些区域的细节将会被损毁。当需要处理的画面中出现文字时，这一问题变得尤为明显。比较保守的算法能够减少对边缘的误判，但是这样会遗漏某些本来需要处理的边缘；相反一个激进的算法也许能够囊括更多的锯齿边缘，当然换来的代价则是误判增加。由于后期处理抗锯齿的本质是从已经生成的少量信息中推测出更多信息，这种两面性是无法避免的。
+                                            </p>
+                                            <p class="MsoNormal" style="text-indent:24pt;">
+                                                值得注意的是，不同于MSAA，后期处理抗锯齿对于几何失真、透明失真、甚至渲染失真的处理方式并没有什么差别：算法对于所有边缘一视同仁。一个接踵而来的问题是：屏幕上的文字也被当成图形模糊了。即使相比于FXAA，在SMAA1x中这种模糊不是那么明显。
+                                            </p>
+                                            <p class="MsoNormal" style="text-indent:24pt;">
+                                                最后还有一个很重要的问题，那就是后处理抗锯齿对边缘信息的解析可能会因为一个像素之差而完全不同。因此后处理抗锯齿会恶化甚至引入更多边缘闪烁的现象。
+                                            </p>
+                                            <h2>
+                                                <a name="undefined"></a>四、主流抗锯齿效果的横向对比
+                                            </h2>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;我们采用某款游戏横向对比下。最终采用的孤岛危机3作为测试游戏，它的引擎是CryENGINE3。测试配置是1080p+i5-6500+1066,截图工具是Frags，画面除了抗锯齿都是最高。
+                                            </p>
+                                            <p class="MsoNormal">
+                                                <img width="619" height="226" src="images/AA/clip_image009.png" />&nbsp;
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>FXAA
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                <img width="803" height="451" src="images/AA/clip_image011.jpg" />
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>SMAA 4X
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                <img width="803" height="451" src="images/AA/clip_image013.jpg" />
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>TXAA 4X
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                <img width="803" height="451" src="images/AA/clip_image015.jpg" />
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>MSAA 8X
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                <img width="803" height="451" src="images/AA/clip_image017.jpg" />
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;
+                                            </p>
+                                            <h3>
+                                                <a name="undefined"></a>总结
+                                            </h3>
+                                            <p class="MsoNormal">
+                                                在性能方面，按消耗的性能多少排名&nbsp;MSAA 8X &gt;= TXAA 4X &gt; SMAA 4X &gt; FXAA
+                                            </p>
+                                            <p class="MsoNormal">
+                                                在画质方面，毋庸置疑MSAA 8X的抗锯齿效果最好。TXAA用了一种类似于CG的滤镜，看起来确实比较有感觉，但还是比较模糊。对于有些游戏加一个CG的滤镜确实更有感觉，但是有些游戏不是。SMAA 4X&nbsp;第一眼看上去不错，但仔细观察，物体的边缘是模糊的。FXAA的效果是最差的，但还是有一定的抗锯齿作用。
+                                            </p>
+                                            <h2>
+                                                <a name="undefined"></a>五、抗锯齿技术的未来
+                                            </h2>
+                                            <p class="MsoNormal">
+                                                &nbsp;&nbsp;了解了当今被广泛应用的两大类抗锯齿技术后，我们会去思考抗锯齿技术的未来。新发布的游戏平台将技术提高到新的层次，而这些新平台会采用什么样的抗锯齿技术？现有抗锯齿技术的缺点将会被如何弥补？新的硬件会带来新的抗锯齿算法吗？
+                                            </p>
+                                            <p class="MsoNormal" style="text-indent:24pt;">
+                                                一种可行的解决方案是将基于采样的抗锯齿基础和后期处理抗锯齿技术结合起来。这种新的混合抗锯齿算法在对画面进行多次采样的同时，会结合后期处理抗锯齿算法以输出最终画面。这样做的好处是显而易见的：新算法既避免了纯后期处理抗锯齿的种种缺点(比如说不能处理子像素失真和造成边缘闪烁的问题)，在同样的性能折损下，对于几何失真的处理结果又比纯粹基于采样的抗锯齿算法好得多。通过将单采样后处理抗锯齿（例如FXAA）和降采样技术相结合，我们已经可以实现两种简单的混合抗锯齿。SMAA以及TXAA。本文解释了关于SMAA和TXAA的一部分细节，这些混合抗锯齿算法很有希望在未来得到广泛应用。
+                                            </p>
+                                            <p class="MsoNormal" style="text-indent:24pt;">
+                                                另一种可行的方案在目前还未被广泛应用：我们可以在渲染时记录额外的几何信息，以供之后的后处理抗锯齿使用。目前的实现有Geometric Post-process Anti-Aliasing (GPAA)&nbsp;以及Geometry Buffer Anti-Aliasing (GBAA)<sub>[8]</sub>
+                                            </p>
+                                            <p class="MsoNormal" style="text-indent:24pt;">
+                                                最后，现代的游戏主机和未来的计算机架构已经开始共享CPU、GPU内存。我们应该充分利用这个特性——在过使用共享内存进行异步自适应抗锯齿”<sub>[9]</sub>，Barringer和Moller描述了一种新的抗锯齿方法。这种方法中，GPU进行单采样点渲染，而CPU则在同时检测关键像素（例如边缘上的像素）并进行稀疏采样的栅格化运算。然而这个方法需要大量重构现今的渲染架构，实现起来是困难的。
+                                            </p>
+                                            <h2>
+                                                <a name="undefined"></a>六、一种新的抗锯齿的探讨
+                                            </h2>
+                                            <p class="MsoQuote">
+                                                &nbsp;&nbsp;“人眼视度是120度，当集中注意力时约为五分之一，即25度”
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                &nbsp;&nbsp;当处在变化极快的游戏过程中，人眼很难观察到一个屏幕内所有的物体。大约能观察的范围到如下（在实际体验中会更小）。
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                <img width="354" height="386" src="images/AA/clip_image019.png" />
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                &nbsp;&nbsp;目前市面上游戏用主流是24英寸显示屏（长约47.9cm、宽约27.0cm）及以上。远远大于25cm的观察范围。可以认为，这些25cm以外的都是“边缘”，玩家不会对这个部分投入过多的注意力。
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                &nbsp;&nbsp;我们可以采用这样处理方式，对于玩家观察的范围，我们使用MSAA或者SSAA等画质较好的抗锯齿进行处理，因为玩家对于这部分投入的注意力比较多。对于边上，我们可以用TXAA或者SMAA甚至FXAA进行处理，只要再两个区域的交界处做好过度，玩家是不会观察到的。这样既减少了性能消耗，也提高了质量。当玩家没有过多操作中，可以认为玩家已经退出战斗模式，我们再使用MSAA处理全屏画面。动态的切换抗锯齿，这样起到一个“欺骗”玩家的作用。
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                &nbsp;&nbsp;下面是两个例子，先对&nbsp;2次不同抗锯齿的画面截图，然后准心周围的画面采用MSAA 8X处理的截图，以外使用TXAA 4X的截图，然后再拼到一起。
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                &nbsp;&nbsp;可以明显的看出，准心周围的草比较清楚，两侧的草有景深。这样既兼顾了画面的CG感又有拟真感。（拼合处有反差，是因为环境和光源是不断变化的）
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                <img width="803" height="451" src="images/AA/clip_image021.png" /><img width="725" height="540" src="images/AA/clip_image022.png" />
+                                            </p>
+                                            <p class="MsoNormal" align="left">全文完</p>
+                                            <p class="MsoNormal" align="left">
+                                                <img width="800" height="340" src="images/AA/a.JPG" />
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;
+                                            </p>
+                                            <p class="MsoNormal">
+                                                &nbsp;
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                [1]&nbsp;<a href="https://www.geforce.cn/hardware/technology/mfaa/technology">https://www.geforce.cn/hardware/technology/mfaa/technology</a>
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                [2]&nbsp;x，指的是选取的采样点个数。
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                [3]&nbsp;A. Reshetov, ‘Morphological antialiasing’, in Proceedings of the Conference on High Performance Graphics 2009 HPG ’09, New York, NY, USA, 2009, pp. 109–116.
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                [4]&nbsp;A. Reshetov, ‘Morphological antialiasing’, in Proceedings of the Conference on High Performance Graphics 2009 HPG ’09, New York, NY, USA, 2009, pp. 109–116.
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                [5]&nbsp;T. Isshiki and H. Kunieda, ‘Efficient anti-aliasing algorithm for computer generated images’, in Proceedings of the 1999 IEEE International Symposium on Circuits and Systems ISCAS ’99, Orlando, FL, 1999, vol. 4, pp. 532–535.
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                [6] J. Jimenez, J. I. Echevarria, T. Sousa, and D. Gutierrez, ‘SMAA: Enhanced Subpixel Morphological Antialiasing’, Comput. Graph. Forum, vol. 31, no. 2pt1, pp. 355–364, May 2012.
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                [7]&nbsp;<a href="http://www.geforce.cn/hardware/technology/txaa/technology">http://www.geforce.cn/hardware/technology/txaa/technology</a>
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                [8]&nbsp;<a href="http://research.nvidia.com/publication/aggregate-g-buffer-anti-aliasing">http://research.nvidia.com/publication/aggregate-g-buffer-anti-aliasing</a>
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                [9] Barringer R. A4:asynchronous adaptive anti-aliasing using shared memory[J]. Acm Transactions on Graphics, 2013, 32(4):1-10.
+                                            </p>
+                                            <p class="MsoNormal" align="left">
+                                                &nbsp;
+                                            </p>
+
+                                        </div>
+
+                                        </div>
+                                    
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <footer id="gtco-footer" role="contentinfo">
+                <div class="container">
+                    <div class="row row-pb-md">
+                        <div class="col-md-12">
+                            <h3 class="footer-heading">Most Popular</h3>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="post-entry">
+                                <div class="post-img">
+                                    <a href="https://github.com/Sk-Raven/NUAA-Data-Structrue" target="_blank"><img src="images/6.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by GetTemplates.co"></a>
+                                </div>
+                                <div class="post-copy">
+                                    <h4><a href="https://github.com/Sk-Raven/NUAA-Data-Structrue" target="_blank">南航数据结构上机作业</a></h4>
+                                    <a class="post-meta"><span class="date-posted">2017.11.10</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="post-entry">
+                                <div class="post-img">
+                                    <a href="https://www.bilibili.com/video/av7352536/?from=search&seid=10974107938575293744" target="_blank"><img src="images/7.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by GetTemplates.co"></a>
+                                </div>
+                                <div class="post-copy">
+                                    <h4><a href="https://www.bilibili.com/video/av7352536/?from=search&seid=10974107938575293744" target="_blank">中岛美嘉 曾经我也想过一了百了 live</a></h4>
+                                    <a class="post-meta"><span class="date-posted">2017.11.10</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="post-entry">
+                                <div class="post-img">
+                                    <a href="single.html"><img src="images/AA/b.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by GetTemplates.co"></a>
+                                </div>
+                                <div class="post-copy">
+                                    <h4><a href="text.aspx?text=2">抗锯齿技术解析</a></h4>
+                                    <a class="post-meta"><span class="date-posted">2017.11.10</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row copyright">
+                        <div class="col-md-12 text-center">
+                            <p>
+                                <small class="block"> Copyright &copy; 2017 Raven.Templates from<a href="http://www.cssmoban.com/" target="_blank" title="模板之家">  模板之家</a> </small>
+                            </p>
+                            <div>
+                                <ul class="gtco-social-icons">
+                                    <li><a href="https://cn.bing.com" target="_blank"><img src="images/icon\bing.png" height="32" width="32" /></a></li>
+                                    <li><a href="http://my.nuaa.edu.cn/portal.php" target="_blank"><img src="images/icon\ZFJ.ico"/ height="32" width="32"></a></li>
+                                    <li><a href="https://www.jetbrains.com" target="_blank"><img src="images/icon\jb.ico"/ height="32" width="32"></a></li>
+                                    <li><a href="https://www.bilibili.com" target="_blank"><img src="images/icon\bilibili.ico"/ height="32" width="32"></a></li>
+                                    <li><a href="https://www.google.com.hk/" target="_blank"><img src="images/icon\google.ico"/ height="32" width="32"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
